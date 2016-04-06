@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>SDLKeycodeLookup</title>
+<link rel="stylesheet" type="text/css" media="all" charset="utf-8" href="fixedleftcms/css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="fixedleftcms/css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" charset="utf-8" href="fixedleftcms/css/print.css">
+<style type="text/css">
+ul.pagetitle{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+li.pagetitle{
+  display: inline;
+  margin: 0;
+}
+td.noborder {
+  border: 0;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td class="noborder">
+<img src="logo.png">
+</td>
+<td class="noborder">
+<ul class="pagetitle">
+<li class="pagetitle"><a class="backlink">SDLKeycodeLookup</a>
+</ul>
+<br><br>
+[<a href="FrontPage.html">FrontPage</a>]&nbsp;[<a href="TitleIndex.html">TitleIndex</a>]&nbsp;[<a href="WordIndex.html">WordIndex</a>]&nbsp;
+</td>
+</tr>
+</table>
+<hr>
+<div id="page">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><div><table style="width: 100%"><tbody><tr>  <td style="color: #FF0000; ; text-align: center"><p class="line862"> DRAFT</td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line867">
+<h1 id="SDL_Keycode_Lookup_Table">SDL Keycode Lookup Table</h1>
+<span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line862">Keycodes for keys with printable characters are represented by the character byte in parentheses. Keycodes without character representations are determined by their <a href="./SDL_Scancode.html">scancode</a> bitwise AND-ed with <tt class="backtick">1&lt;&lt;30</tt> (0x40000000). <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><div><table><tbody><tr>  <td style="background-color: #EDEDED"><p class="line891"><em>Decimal Value</em></td>
+  <td style="background-color: #EDEDED"><p class="line891"><em>Hex Value (Char)</em></td>
+  <td style="background-color: #EDEDED"><p class="line891"><em>SDL_Keycode Constant</em></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-10"></span><p class="line862">0</td>
+  <td><p class="line862">0x00 ('\0')</td>
+  <td><p class="line862">SDLK_UNKNOWN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-11"></span><p class="line862">8</td>
+  <td><p class="line862">0x08 ('\b')</td>
+  <td><p class="line862">SDLK_BACKSPACE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-12"></span><p class="line862">9</td>
+  <td><p class="line862">0x09 ('\t')</td>
+  <td><p class="line862">SDLK_TAB</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-13"></span><p class="line862">13</td>
+  <td><p class="line862">0x0D ('\r')</td>
+  <td><p class="line862">SDLK_RETURN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-14"></span><p class="line862">27</td>
+  <td><p class="line862">0x1B ('\033')</td>
+  <td><p class="line862">SDLK_ESCAPE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-15"></span><p class="line862">32</td>
+  <td><p class="line862">0x20 (' ')</td>
+  <td><p class="line862">SDLK_SPACE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-16"></span><p class="line862">33</td>
+  <td><p class="line862">0x21 ('!')</td>
+  <td><p class="line862">SDLK_EXCLAIM</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-17"></span><p class="line862">34</td>
+  <td><p class="line862">0x22 ('\"')</td>
+  <td><p class="line862">SDLK_QUOTEDBL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-18"></span><p class="line862">35</td>
+  <td><p class="line862">0x23 ('#')</td>
+  <td><p class="line862">SDLK_HASH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-19"></span><p class="line862">36</td>
+  <td><p class="line862">0x24 ('$')</td>
+  <td><p class="line862">SDLK_DOLLAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-20"></span><p class="line862">37</td>
+  <td><p class="line862">0x25 ('%')</td>
+  <td><p class="line862">SDLK_PERCENT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-21"></span><p class="line862">38</td>
+  <td><p class="line862">0x26 ('&amp;')</td>
+  <td><p class="line862">SDLK_AMPERSAND</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-22"></span><p class="line862">39</td>
+  <td><p class="line862">0x27 ('\&#39;')</td>
+  <td><p class="line862">SDLK_QUOTE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-23"></span><p class="line862">40</td>
+  <td><p class="line862">0x28 ('(')</td>
+  <td><p class="line862">SDLK_LEFTPAREN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-24"></span><p class="line862">41</td>
+  <td><p class="line862">0x29 (')')</td>
+  <td><p class="line862">SDLK_RIGHTPAREN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-25"></span><p class="line862">42</td>
+  <td><p class="line862">0x2A ('*')</td>
+  <td><p class="line862">SDLK_ASTERISK</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-26"></span><p class="line862">43</td>
+  <td><p class="line862">0x2B ('+')</td>
+  <td><p class="line862">SDLK_PLUS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-27"></span><p class="line862">44</td>
+  <td><p class="line862">0x2C (',')</td>
+  <td><p class="line862">SDLK_COMMA</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-28"></span><p class="line862">45</td>
+  <td><p class="line862">0x2D ('-')</td>
+  <td><p class="line862">SDLK_MINUS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-29"></span><p class="line862">46</td>
+  <td><p class="line862">0x2E ('.')</td>
+  <td><p class="line862">SDLK_PERIOD</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-30"></span><p class="line862">47</td>
+  <td><p class="line862">0x2F ('/')</td>
+  <td><p class="line862">SDLK_SLASH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-31"></span><p class="line862">48</td>
+  <td><p class="line862">0x30 ('0')</td>
+  <td><p class="line862">SDLK_0</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-32"></span><p class="line862">49</td>
+  <td><p class="line862">0x31 ('1')</td>
+  <td><p class="line862">SDLK_1</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-33"></span><p class="line862">50</td>
+  <td><p class="line862">0x32 ('2')</td>
+  <td><p class="line862">SDLK_2</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-34"></span><p class="line862">51</td>
+  <td><p class="line862">0x33 ('3')</td>
+  <td><p class="line862">SDLK_3</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-35"></span><p class="line862">52</td>
+  <td><p class="line862">0x34 ('4')</td>
+  <td><p class="line862">SDLK_4</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-36"></span><p class="line862">53</td>
+  <td><p class="line862">0x35 ('5')</td>
+  <td><p class="line862">SDLK_5</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-37"></span><p class="line862">54</td>
+  <td><p class="line862">0x36 ('6')</td>
+  <td><p class="line862">SDLK_6</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-38"></span><p class="line862">55</td>
+  <td><p class="line862">0x37 ('7')</td>
+  <td><p class="line862">SDLK_7</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-39"></span><p class="line862">56</td>
+  <td><p class="line862">0x38 ('8')</td>
+  <td><p class="line862">SDLK_8</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-40"></span><p class="line862">57</td>
+  <td><p class="line862">0x39 ('9')</td>
+  <td><p class="line862">SDLK_9</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-41"></span><p class="line862">58</td>
+  <td><p class="line862">0x3A (':')</td>
+  <td><p class="line862">SDLK_COLON</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-42"></span><p class="line862">59</td>
+  <td><p class="line862">0x3B (';')</td>
+  <td><p class="line862">SDLK_SEMICOLON</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-43"></span><p class="line862">60</td>
+  <td><p class="line862">0x3C ('&lt;')</td>
+  <td><p class="line862">SDLK_LESS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-44"></span><p class="line862">61</td>
+  <td><p class="line862">0x3D ('=')</td>
+  <td><p class="line862">SDLK_EQUALS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-45"></span><p class="line862">62</td>
+  <td><p class="line862">0x3E ('&gt;')</td>
+  <td><p class="line862">SDLK_GREATER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-46"></span><p class="line862">63</td>
+  <td><p class="line862">0x3F ('?')</td>
+  <td><p class="line862">SDLK_QUESTION</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-47"></span><p class="line862">64</td>
+  <td><p class="line862">0x40 ('@')</td>
+  <td><p class="line862">SDLK_AT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-48"></span><p class="line862">91</td>
+  <td><p class="line862">0x5B ('[')</td>
+  <td><p class="line862">SDLK_LEFTBRACKET</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-49"></span><p class="line862">92</td>
+  <td><p class="line862">0x5C ('\\')</td>
+  <td><p class="line862">SDLK_BACKSLASH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-50"></span><p class="line862">93</td>
+  <td><p class="line862">0x5D (']')</td>
+  <td><p class="line862">SDLK_RIGHTBRACKET</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-51"></span><p class="line862">94</td>
+  <td><p class="line862">0x5E ('^')</td>
+  <td><p class="line862">SDLK_CARET</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-52"></span><p class="line862">95</td>
+  <td><p class="line862">0x5F ('_')</td>
+  <td><p class="line862">SDLK_UNDERSCORE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-53"></span><p class="line862">96</td>
+  <td><p class="line862">0x60 ('&#96;')</td>
+  <td><p class="line862">SDLK_BACKQUOTE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-54"></span><p class="line862">97</td>
+  <td><p class="line862">0x61 ('a')</td>
+  <td><p class="line862">SDLK_a</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-55"></span><p class="line862">98</td>
+  <td><p class="line862">0x62 ('b')</td>
+  <td><p class="line862">SDLK_b</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-56"></span><p class="line862">99</td>
+  <td><p class="line862">0x63 ('c')</td>
+  <td><p class="line862">SDLK_c</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-57"></span><p class="line862">100</td>
+  <td><p class="line862">0x64 ('d')</td>
+  <td><p class="line862">SDLK_d</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-58"></span><p class="line862">101</td>
+  <td><p class="line862">0x65 ('e')</td>
+  <td><p class="line862">SDLK_e</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-59"></span><p class="line862">102</td>
+  <td><p class="line862">0x66 ('f')</td>
+  <td><p class="line862">SDLK_f</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-60"></span><p class="line862">103</td>
+  <td><p class="line862">0x67 ('g')</td>
+  <td><p class="line862">SDLK_g</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-61"></span><p class="line862">104</td>
+  <td><p class="line862">0x68 ('h')</td>
+  <td><p class="line862">SDLK_h</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-62"></span><p class="line862">105</td>
+  <td><p class="line862">0x69 ('i')</td>
+  <td><p class="line862">SDLK_i</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-63"></span><p class="line862">106</td>
+  <td><p class="line862">0x6A ('j')</td>
+  <td><p class="line862">SDLK_j</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-64"></span><p class="line862">107</td>
+  <td><p class="line862">0x6B ('k')</td>
+  <td><p class="line862">SDLK_k</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-65"></span><p class="line862">108</td>
+  <td><p class="line862">0x6C ('l')</td>
+  <td><p class="line862">SDLK_l</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-66"></span><p class="line862">109</td>
+  <td><p class="line862">0x6D ('m')</td>
+  <td><p class="line862">SDLK_m</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-67"></span><p class="line862">110</td>
+  <td><p class="line862">0x6E ('n')</td>
+  <td><p class="line862">SDLK_n</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-68"></span><p class="line862">111</td>
+  <td><p class="line862">0x6F ('o')</td>
+  <td><p class="line862">SDLK_o</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-69"></span><p class="line862">112</td>
+  <td><p class="line862">0x70 ('p')</td>
+  <td><p class="line862">SDLK_p</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-70"></span><p class="line862">113</td>
+  <td><p class="line862">0x71 ('q')</td>
+  <td><p class="line862">SDLK_q</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-71"></span><p class="line862">114</td>
+  <td><p class="line862">0x72 ('r')</td>
+  <td><p class="line862">SDLK_r</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-72"></span><p class="line862">115</td>
+  <td><p class="line862">0x73 ('s')</td>
+  <td><p class="line862">SDLK_s</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-73"></span><p class="line862">116</td>
+  <td><p class="line862">0x74 ('t')</td>
+  <td><p class="line862">SDLK_t</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-74"></span><p class="line862">117</td>
+  <td><p class="line862">0x75 ('u')</td>
+  <td><p class="line862">SDLK_u</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-75"></span><p class="line862">118</td>
+  <td><p class="line862">0x76 ('v')</td>
+  <td><p class="line862">SDLK_v</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-76"></span><p class="line862">119</td>
+  <td><p class="line862">0x77 ('w')</td>
+  <td><p class="line862">SDLK_w</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-77"></span><p class="line862">120</td>
+  <td><p class="line862">0x78 ('x')</td>
+  <td><p class="line862">SDLK_x</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-78"></span><p class="line862">121</td>
+  <td><p class="line862">0x79 ('y')</td>
+  <td><p class="line862">SDLK_y</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-79"></span><p class="line862">122</td>
+  <td><p class="line862">0x7A ('z')</td>
+  <td><p class="line862">SDLK_z</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-80"></span><p class="line862">177</td>
+  <td><p class="line862">0xB1 ('\177')</td>
+  <td><p class="line862">SDLK_DELETE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-81"></span><p class="line862">1073741881</td>
+  <td><p class="line862">0x40000039</td>
+  <td><p class="line862">SDLK_CAPSLOCK</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-82"></span><p class="line862">1073741882</td>
+  <td><p class="line862">0x4000003A</td>
+  <td><p class="line862">SDLK_F1</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-83"></span><p class="line862">1073741883</td>
+  <td><p class="line862">0x4000003B</td>
+  <td><p class="line862">SDLK_F2</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-84"></span><p class="line862">1073741884</td>
+  <td><p class="line862">0x4000003C</td>
+  <td><p class="line862">SDLK_F3</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-85"></span><p class="line862">1073741885</td>
+  <td><p class="line862">0x4000003D</td>
+  <td><p class="line862">SDLK_F4</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-86"></span><p class="line862">1073741886</td>
+  <td><p class="line862">0x4000003E</td>
+  <td><p class="line862">SDLK_F5</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-87"></span><p class="line862">1073741887</td>
+  <td><p class="line862">0x4000003F</td>
+  <td><p class="line862">SDLK_F6</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-88"></span><p class="line862">1073741888</td>
+  <td><p class="line862">0x40000040</td>
+  <td><p class="line862">SDLK_F7</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-89"></span><p class="line862">1073741889</td>
+  <td><p class="line862">0x40000041</td>
+  <td><p class="line862">SDLK_F8</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-90"></span><p class="line862">1073741890</td>
+  <td><p class="line862">0x40000042</td>
+  <td><p class="line862">SDLK_F9</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-91"></span><p class="line862">1073741891</td>
+  <td><p class="line862">0x40000043</td>
+  <td><p class="line862">SDLK_F10</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-92"></span><p class="line862">1073741892</td>
+  <td><p class="line862">0x40000044</td>
+  <td><p class="line862">SDLK_F11</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-93"></span><p class="line862">1073741893</td>
+  <td><p class="line862">0x40000045</td>
+  <td><p class="line862">SDLK_F12</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-94"></span><p class="line862">1073741894</td>
+  <td><p class="line862">0x40000046</td>
+  <td><p class="line862">SDLK_PRINTSCREEN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-95"></span><p class="line862">1073741895</td>
+  <td><p class="line862">0x40000047</td>
+  <td><p class="line862">SDLK_SCROLLLOCK</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-96"></span><p class="line862">1073741896</td>
+  <td><p class="line862">0x40000048</td>
+  <td><p class="line862">SDLK_PAUSE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-97"></span><p class="line862">1073741897</td>
+  <td><p class="line862">0x40000049</td>
+  <td><p class="line862">SDLK_INSERT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-98"></span><p class="line862">1073741898</td>
+  <td><p class="line862">0x4000004A</td>
+  <td><p class="line862">SDLK_HOME</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-99"></span><p class="line862">1073741899</td>
+  <td><p class="line862">0x4000004B</td>
+  <td><p class="line862">SDLK_PAGEUP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-100"></span><p class="line862">1073741901</td>
+  <td><p class="line862">0x4000004D</td>
+  <td><p class="line862">SDLK_END</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-101"></span><p class="line862">1073741902</td>
+  <td><p class="line862">0x4000004E</td>
+  <td><p class="line862">SDLK_PAGEDOWN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-102"></span><p class="line862">1073741903</td>
+  <td><p class="line862">0x4000004F</td>
+  <td><p class="line862">SDLK_RIGHT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-103"></span><p class="line862">1073741904</td>
+  <td><p class="line862">0x40000050</td>
+  <td><p class="line862">SDLK_LEFT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-104"></span><p class="line862">1073741905</td>
+  <td><p class="line862">0x40000051</td>
+  <td><p class="line862">SDLK_DOWN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-105"></span><p class="line862">1073741906</td>
+  <td><p class="line862">0x40000052</td>
+  <td><p class="line862">SDLK_UP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-106"></span><p class="line862">1073741907</td>
+  <td><p class="line862">0x40000053</td>
+  <td><p class="line862">SDLK_NUMLOCKCLEAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-107"></span><p class="line862">1073741908</td>
+  <td><p class="line862">0x40000054</td>
+  <td><p class="line862">SDLK_KP_DIVIDE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-108"></span><p class="line862">1073741909</td>
+  <td><p class="line862">0x40000055</td>
+  <td><p class="line862">SDLK_KP_MULTIPLY</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-109"></span><p class="line862">1073741910</td>
+  <td><p class="line862">0x40000056</td>
+  <td><p class="line862">SDLK_KP_MINUS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-110"></span><p class="line862">1073741911</td>
+  <td><p class="line862">0x40000057</td>
+  <td><p class="line862">SDLK_KP_PLUS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-111"></span><p class="line862">1073741912</td>
+  <td><p class="line862">0x40000058</td>
+  <td><p class="line862">SDLK_KP_ENTER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-112"></span><p class="line862">1073741913</td>
+  <td><p class="line862">0x40000059</td>
+  <td><p class="line862">SDLK_KP_1</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-113"></span><p class="line862">1073741914</td>
+  <td><p class="line862">0x4000005A</td>
+  <td><p class="line862">SDLK_KP_2</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-114"></span><p class="line862">1073741915</td>
+  <td><p class="line862">0x4000005B</td>
+  <td><p class="line862">SDLK_KP_3</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-115"></span><p class="line862">1073741916</td>
+  <td><p class="line862">0x4000005C</td>
+  <td><p class="line862">SDLK_KP_4</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-116"></span><p class="line862">1073741917</td>
+  <td><p class="line862">0x4000005D</td>
+  <td><p class="line862">SDLK_KP_5</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-117"></span><p class="line862">1073741918</td>
+  <td><p class="line862">0x4000005E</td>
+  <td><p class="line862">SDLK_KP_6</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-118"></span><p class="line862">1073741919</td>
+  <td><p class="line862">0x4000005F</td>
+  <td><p class="line862">SDLK_KP_7</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-119"></span><p class="line862">1073741920</td>
+  <td><p class="line862">0x40000060</td>
+  <td><p class="line862">SDLK_KP_8</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-120"></span><p class="line862">1073741921</td>
+  <td><p class="line862">0x40000061</td>
+  <td><p class="line862">SDLK_KP_9</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-121"></span><p class="line862">1073741922</td>
+  <td><p class="line862">0x40000062</td>
+  <td><p class="line862">SDLK_KP_0</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-122"></span><p class="line862">1073741923</td>
+  <td><p class="line862">0x40000063</td>
+  <td><p class="line862">SDLK_KP_PERIOD</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-123"></span><p class="line862">1073741925</td>
+  <td><p class="line862">0x40000065</td>
+  <td><p class="line862">SDLK_APPLICATION</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-124"></span><p class="line862">1073741926</td>
+  <td><p class="line862">0x40000066</td>
+  <td><p class="line862">SDLK_POWER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-125"></span><p class="line862">1073741927</td>
+  <td><p class="line862">0x40000067</td>
+  <td><p class="line862">SDLK_KP_EQUALS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-126"></span><p class="line862">1073741928</td>
+  <td><p class="line862">0x40000068</td>
+  <td><p class="line862">SDLK_F13</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-127"></span><p class="line862">1073741929</td>
+  <td><p class="line862">0x40000069</td>
+  <td><p class="line862">SDLK_F14</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-128"></span><p class="line862">1073741930</td>
+  <td><p class="line862">0x4000006A</td>
+  <td><p class="line862">SDLK_F15</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-129"></span><p class="line862">1073741931</td>
+  <td><p class="line862">0x4000006B</td>
+  <td><p class="line862">SDLK_F16</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-130"></span><p class="line862">1073741932</td>
+  <td><p class="line862">0x4000006C</td>
+  <td><p class="line862">SDLK_F17</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-131"></span><p class="line862">1073741933</td>
+  <td><p class="line862">0x4000006D</td>
+  <td><p class="line862">SDLK_F18</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-132"></span><p class="line862">1073741934</td>
+  <td><p class="line862">0x4000006E</td>
+  <td><p class="line862">SDLK_F19</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-133"></span><p class="line862">1073741935</td>
+  <td><p class="line862">0x4000006F</td>
+  <td><p class="line862">SDLK_F20</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-134"></span><p class="line862">1073741936</td>
+  <td><p class="line862">0x40000070</td>
+  <td><p class="line862">SDLK_F21</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-135"></span><p class="line862">1073741937</td>
+  <td><p class="line862">0x40000071</td>
+  <td><p class="line862">SDLK_F22</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-136"></span><p class="line862">1073741938</td>
+  <td><p class="line862">0x40000072</td>
+  <td><p class="line862">SDLK_F23</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-137"></span><p class="line862">1073741939</td>
+  <td><p class="line862">0x40000073</td>
+  <td><p class="line862">SDLK_F24</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-138"></span><p class="line862">1073741940</td>
+  <td><p class="line862">0x40000074</td>
+  <td><p class="line862">SDLK_EXECUTE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-139"></span><p class="line862">1073741941</td>
+  <td><p class="line862">0x40000075</td>
+  <td><p class="line862">SDLK_HELP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-140"></span><p class="line862">1073741942</td>
+  <td><p class="line862">0x40000076</td>
+  <td><p class="line862">SDLK_MENU</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-141"></span><p class="line862">1073741943</td>
+  <td><p class="line862">0x40000077</td>
+  <td><p class="line862">SDLK_SELECT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-142"></span><p class="line862">1073741944</td>
+  <td><p class="line862">0x40000078</td>
+  <td><p class="line862">SDLK_STOP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-143"></span><p class="line862">1073741945</td>
+  <td><p class="line862">0x40000079</td>
+  <td><p class="line862">SDLK_AGAIN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-144"></span><p class="line862">1073741946</td>
+  <td><p class="line862">0x4000007A</td>
+  <td><p class="line862">SDLK_UNDO</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-145"></span><p class="line862">1073741947</td>
+  <td><p class="line862">0x4000007B</td>
+  <td><p class="line862">SDLK_CUT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-146"></span><p class="line862">1073741948</td>
+  <td><p class="line862">0x4000007C</td>
+  <td><p class="line862">SDLK_COPY</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-147"></span><p class="line862">1073741949</td>
+  <td><p class="line862">0x4000007D</td>
+  <td><p class="line862">SDLK_PASTE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-148"></span><p class="line862">1073741950</td>
+  <td><p class="line862">0x4000007E</td>
+  <td><p class="line862">SDLK_FIND</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-149"></span><p class="line862">1073741951</td>
+  <td><p class="line862">0x4000007F</td>
+  <td><p class="line862">SDLK_MUTE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-150"></span><p class="line862">1073741952</td>
+  <td><p class="line862">0x40000080</td>
+  <td><p class="line862">SDLK_VOLUMEUP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-151"></span><p class="line862">1073741953</td>
+  <td><p class="line862">0x40000081</td>
+  <td><p class="line862">SDLK_VOLUMEDOWN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-152"></span><p class="line862">1073741957</td>
+  <td><p class="line862">0x40000085</td>
+  <td><p class="line862">SDLK_KP_COMMA</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-153"></span><p class="line862">1073741958</td>
+  <td><p class="line862">0x40000086</td>
+  <td><p class="line862">SDLK_KP_EQUALSAS400</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-154"></span><p class="line862">1073741977</td>
+  <td><p class="line862">0x40000099</td>
+  <td><p class="line862">SDLK_ALTERASE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-155"></span><p class="line862">1073741978</td>
+  <td><p class="line862">0x4000009A</td>
+  <td><p class="line862">SDLK_SYSREQ</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-156"></span><p class="line862">1073741979</td>
+  <td><p class="line862">0x4000009B</td>
+  <td><p class="line862">SDLK_CANCEL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-157"></span><p class="line862">1073741980</td>
+  <td><p class="line862">0x4000009C</td>
+  <td><p class="line862">SDLK_CLEAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-158"></span><p class="line862">1073741981</td>
+  <td><p class="line862">0x4000009D</td>
+  <td><p class="line862">SDLK_PRIOR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-159"></span><p class="line862">1073741982</td>
+  <td><p class="line862">0x4000009E</td>
+  <td><p class="line862">SDLK_RETURN2</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-160"></span><p class="line862">1073741983</td>
+  <td><p class="line862">0x4000009F</td>
+  <td><p class="line862">SDLK_SEPARATOR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-161"></span><p class="line862">1073741984</td>
+  <td><p class="line862">0x400000A0</td>
+  <td><p class="line862">SDLK_OUT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-162"></span><p class="line862">1073741985</td>
+  <td><p class="line862">0x400000A1</td>
+  <td><p class="line862">SDLK_OPER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-163"></span><p class="line862">1073741986</td>
+  <td><p class="line862">0x400000A2</td>
+  <td><p class="line862">SDLK_CLEARAGAIN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-164"></span><p class="line862">1073741987</td>
+  <td><p class="line862">0x400000A3</td>
+  <td><p class="line862">SDLK_CRSEL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-165"></span><p class="line862">1073741988</td>
+  <td><p class="line862">0x400000A4</td>
+  <td><p class="line862">SDLK_EXSEL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-166"></span><p class="line862">1073742000</td>
+  <td><p class="line862">0x400000B0</td>
+  <td><p class="line862">SDLK_KP_00</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-167"></span><p class="line862">1073742001</td>
+  <td><p class="line862">0x400000B1</td>
+  <td><p class="line862">SDLK_KP_000</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-168"></span><p class="line862">1073742002</td>
+  <td><p class="line862">0x400000B2</td>
+  <td><p class="line862">SDLK_THOUSANDSSEPARATOR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-169"></span><p class="line862">1073742003</td>
+  <td><p class="line862">0x400000B3</td>
+  <td><p class="line862">SDLK_DECIMALSEPARATOR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-170"></span><p class="line862">1073742004</td>
+  <td><p class="line862">0x400000B4</td>
+  <td><p class="line862">SDLK_CURRENCYUNIT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-171"></span><p class="line862">1073742005</td>
+  <td><p class="line862">0x400000B5</td>
+  <td><p class="line862">SDLK_CURRENCYSUBUNIT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-172"></span><p class="line862">1073742006</td>
+  <td><p class="line862">0x400000B6</td>
+  <td><p class="line862">SDLK_KP_LEFTPAREN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-173"></span><p class="line862">1073742007</td>
+  <td><p class="line862">0x400000B7</td>
+  <td><p class="line862">SDLK_KP_RIGHTPAREN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-174"></span><p class="line862">1073742008</td>
+  <td><p class="line862">0x400000B8</td>
+  <td><p class="line862">SDLK_KP_LEFTBRACE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-175"></span><p class="line862">1073742009</td>
+  <td><p class="line862">0x400000B9</td>
+  <td><p class="line862">SDLK_KP_RIGHTBRACE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-176"></span><p class="line862">1073742010</td>
+  <td><p class="line862">0x400000BA</td>
+  <td><p class="line862">SDLK_KP_TAB</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-177"></span><p class="line862">1073742011</td>
+  <td><p class="line862">0x400000BB</td>
+  <td><p class="line862">SDLK_KP_BACKSPACE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-178"></span><p class="line862">1073742012</td>
+  <td><p class="line862">0x400000BC</td>
+  <td><p class="line862">SDLK_KP_A</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-179"></span><p class="line862">1073742013</td>
+  <td><p class="line862">0x400000BD</td>
+  <td><p class="line862">SDLK_KP_B</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-180"></span><p class="line862">1073742014</td>
+  <td><p class="line862">0x400000BE</td>
+  <td><p class="line862">SDLK_KP_C</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-181"></span><p class="line862">1073742015</td>
+  <td><p class="line862">0x400000BF</td>
+  <td><p class="line862">SDLK_KP_D</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-182"></span><p class="line862">1073742016</td>
+  <td><p class="line862">0x400000C0</td>
+  <td><p class="line862">SDLK_KP_E</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-183"></span><p class="line862">1073742017</td>
+  <td><p class="line862">0x400000C1</td>
+  <td><p class="line862">SDLK_KP_F</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-184"></span><p class="line862">1073742018</td>
+  <td><p class="line862">0x400000C2</td>
+  <td><p class="line862">SDLK_KP_XOR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-185"></span><p class="line862">1073742019</td>
+  <td><p class="line862">0x400000C3</td>
+  <td><p class="line862">SDLK_KP_POWER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-186"></span><p class="line862">1073742020</td>
+  <td><p class="line862">0x400000C4</td>
+  <td><p class="line862">SDLK_KP_PERCENT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-187"></span><p class="line862">1073742021</td>
+  <td><p class="line862">0x400000C5</td>
+  <td><p class="line862">SDLK_KP_LESS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-188"></span><p class="line862">1073742022</td>
+  <td><p class="line862">0x400000C6</td>
+  <td><p class="line862">SDLK_KP_GREATER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-189"></span><p class="line862">1073742023</td>
+  <td><p class="line862">0x400000C7</td>
+  <td><p class="line862">SDLK_KP_AMPERSAND</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-190"></span><p class="line862">1073742024</td>
+  <td><p class="line862">0x400000C8</td>
+  <td><p class="line862">SDLK_KP_DBLAMPERSAND</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-191"></span><p class="line862">1073742025</td>
+  <td><p class="line862">0x400000C9</td>
+  <td><p class="line862">SDLK_KP_VERTICALBAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-192"></span><p class="line862">1073742026</td>
+  <td><p class="line862">0x400000CA</td>
+  <td><p class="line862">SDLK_KP_DBLVERTICALBAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-193"></span><p class="line862">1073742027</td>
+  <td><p class="line862">0x400000CB</td>
+  <td><p class="line862">SDLK_KP_COLON</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-194"></span><p class="line862">1073742028</td>
+  <td><p class="line862">0x400000CC</td>
+  <td><p class="line862">SDLK_KP_HASH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-195"></span><p class="line862">1073742029</td>
+  <td><p class="line862">0x400000CD</td>
+  <td><p class="line862">SDLK_KP_SPACE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-196"></span><p class="line862">1073742030</td>
+  <td><p class="line862">0x400000CE</td>
+  <td><p class="line862">SDLK_KP_AT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-197"></span><p class="line862">1073742031</td>
+  <td><p class="line862">0x400000CF</td>
+  <td><p class="line862">SDLK_KP_EXCLAM</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-198"></span><p class="line862">1073742032</td>
+  <td><p class="line862">0x400000D0</td>
+  <td><p class="line862">SDLK_KP_MEMSTORE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-199"></span><p class="line862">1073742033</td>
+  <td><p class="line862">0x400000D1</td>
+  <td><p class="line862">SDLK_KP_MEMRECALL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-200"></span><p class="line862">1073742034</td>
+  <td><p class="line862">0x400000D2</td>
+  <td><p class="line862">SDLK_KP_MEMCLEAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-201"></span><p class="line862">1073742035</td>
+  <td><p class="line862">0x400000D3</td>
+  <td><p class="line862">SDLK_KP_MEMADD</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-202"></span><p class="line862">1073742036</td>
+  <td><p class="line862">0x400000D4</td>
+  <td><p class="line862">SDLK_KP_MEMSUBTRACT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-203"></span><p class="line862">1073742037</td>
+  <td><p class="line862">0x400000D5</td>
+  <td><p class="line862">SDLK_KP_MEMMULTIPLY</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-204"></span><p class="line862">1073742038</td>
+  <td><p class="line862">0x400000D6</td>
+  <td><p class="line862">SDLK_KP_MEMDIVIDE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-205"></span><p class="line862">1073742039</td>
+  <td><p class="line862">0x400000D7</td>
+  <td><p class="line862">SDLK_KP_PLUSMINUS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-206"></span><p class="line862">1073742040</td>
+  <td><p class="line862">0x400000D8</td>
+  <td><p class="line862">SDLK_KP_CLEAR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-207"></span><p class="line862">1073742041</td>
+  <td><p class="line862">0x400000D9</td>
+  <td><p class="line862">SDLK_KP_CLEARENTRY</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-208"></span><p class="line862">1073742042</td>
+  <td><p class="line862">0x400000DA</td>
+  <td><p class="line862">SDLK_KP_BINARY</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-209"></span><p class="line862">1073742043</td>
+  <td><p class="line862">0x400000DB</td>
+  <td><p class="line862">SDLK_KP_OCTAL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-210"></span><p class="line862">1073742044</td>
+  <td><p class="line862">0x400000DC</td>
+  <td><p class="line862">SDLK_KP_DECIMAL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-211"></span><p class="line862">1073742045</td>
+  <td><p class="line862">0x400000DD</td>
+  <td><p class="line862">SDLK_KP_HEXADECIMAL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-212"></span><p class="line862">1073742048</td>
+  <td><p class="line862">0x400000E0</td>
+  <td><p class="line862">SDLK_LCTRL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-213"></span><p class="line862">1073742049</td>
+  <td><p class="line862">0x400000E1</td>
+  <td><p class="line862">SDLK_LSHIFT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-214"></span><p class="line862">1073742050</td>
+  <td><p class="line862">0x400000E2</td>
+  <td><p class="line862">SDLK_LALT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-215"></span><p class="line862">1073742051</td>
+  <td><p class="line862">0x400000E3</td>
+  <td><p class="line862">SDLK_LGUI</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-216"></span><p class="line862">1073742052</td>
+  <td><p class="line862">0x400000E4</td>
+  <td><p class="line862">SDLK_RCTRL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-217"></span><p class="line862">1073742053</td>
+  <td><p class="line862">0x400000E5</td>
+  <td><p class="line862">SDLK_RSHIFT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-218"></span><p class="line862">1073742054</td>
+  <td><p class="line862">0x400000E6</td>
+  <td><p class="line862">SDLK_RALT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-219"></span><p class="line862">1073742055</td>
+  <td><p class="line862">0x400000E7</td>
+  <td><p class="line862">SDLK_RGUI</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-220"></span><p class="line862">1073742081</td>
+  <td><p class="line862">0x40000101</td>
+  <td><p class="line862">SDLK_MODE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-221"></span><p class="line862">1073742082</td>
+  <td><p class="line862">0x40000102</td>
+  <td><p class="line862">SDLK_AUDIONEXT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-222"></span><p class="line862">1073742083</td>
+  <td><p class="line862">0x40000103</td>
+  <td><p class="line862">SDLK_AUDIOPREV</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-223"></span><p class="line862">1073742084</td>
+  <td><p class="line862">0x40000104</td>
+  <td><p class="line862">SDLK_AUDIOSTOP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-224"></span><p class="line862">1073742085</td>
+  <td><p class="line862">0x40000105</td>
+  <td><p class="line862">SDLK_AUDIOPLAY</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-225"></span><p class="line862">1073742086</td>
+  <td><p class="line862">0x40000106</td>
+  <td><p class="line862">SDLK_AUDIOMUTE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-226"></span><p class="line862">1073742087</td>
+  <td><p class="line862">0x40000107</td>
+  <td><p class="line862">SDLK_MEDIASELECT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-227"></span><p class="line862">1073742088</td>
+  <td><p class="line862">0x40000108</td>
+  <td><p class="line862">SDLK_WWW</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-228"></span><p class="line862">1073742089</td>
+  <td><p class="line862">0x40000109</td>
+  <td><p class="line862">SDLK_MAIL</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-229"></span><p class="line862">1073742090</td>
+  <td><p class="line862">0x4000010A</td>
+  <td><p class="line862">SDLK_CALCULATOR</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-230"></span><p class="line862">1073742091</td>
+  <td><p class="line862">0x4000010B</td>
+  <td><p class="line862">SDLK_COMPUTER</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-231"></span><p class="line862">1073742092</td>
+  <td><p class="line862">0x4000010C</td>
+  <td><p class="line862">SDLK_AC_SEARCH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-232"></span><p class="line862">1073742093</td>
+  <td><p class="line862">0x4000010D</td>
+  <td><p class="line862">SDLK_AC_HOME</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-233"></span><p class="line862">1073742094</td>
+  <td><p class="line862">0x4000010E</td>
+  <td><p class="line862">SDLK_AC_BACK</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-234"></span><p class="line862">1073742095</td>
+  <td><p class="line862">0x4000010F</td>
+  <td><p class="line862">SDLK_AC_FORWARD</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-235"></span><p class="line862">1073742096</td>
+  <td><p class="line862">0x40000110</td>
+  <td><p class="line862">SDLK_AC_STOP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-236"></span><p class="line862">1073742097</td>
+  <td><p class="line862">0x40000111</td>
+  <td><p class="line862">SDLK_AC_REFRESH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-237"></span><p class="line862">1073742098</td>
+  <td><p class="line862">0x40000112</td>
+  <td><p class="line862">SDLK_AC_BOOKMARKS</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-238"></span><p class="line862">1073742099</td>
+  <td><p class="line862">0x40000113</td>
+  <td><p class="line862">SDLK_BRIGHTNESSDOWN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-239"></span><p class="line862">1073742100</td>
+  <td><p class="line862">0x40000114</td>
+  <td><p class="line862">SDLK_BRIGHTNESSUP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-240"></span><p class="line862">1073742101</td>
+  <td><p class="line862">0x40000115</td>
+  <td><p class="line862">SDLK_DISPLAYSWITCH</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-241"></span><p class="line862">1073742102</td>
+  <td><p class="line862">0x40000116</td>
+  <td><p class="line862">SDLK_KBDILLUMTOGGLE</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-242"></span><p class="line862">1073742103</td>
+  <td><p class="line862">0x40000117</td>
+  <td><p class="line862">SDLK_KBDILLUMDOWN</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-243"></span><p class="line862">1073742104</td>
+  <td><p class="line862">0x40000118</td>
+  <td><p class="line862">SDLK_KBDILLUMUP</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-244"></span><p class="line862">1073742105</td>
+  <td><p class="line862">0x40000119</td>
+  <td><p class="line862">SDLK_EJECT</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-245"></span><p class="line862">1073742106</td>
+  <td><p class="line862">0x4000011A</td>
+  <td><p class="line862">SDLK_SLEEP</td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-246"></span><span class="anchor" id="bottom"></span></div>
+</div>
+<hr>
+2013-11-22 03:31
+</body>
+</html>
