@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>SDL_GetDefaultAssertionHandler</title></head>
+		<body>
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><p class="line867"><span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span></p><p class="line867">
+</p><h1 id="SDL_GetDefaultAssertionHandler-1">SDL_GetDefaultAssertionHandler</h1>
+<span class="anchor" id="line-8"></span><p class="line874">Use this function to get the default assertion handler. <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span></p><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li>
+<a href="#SDL_GetDefaultAssertionHandler-1">SDL_GetDefaultAssertionHandler</a><ol><li>
+<a href="#Syntax">Syntax</a></li><li>
+<a href="#Return_Value">Return Value</a></li><li>
+<a href="#Code_Examples">Code Examples</a></li><li>
+<a href="#Remarks">Remarks</a></li><li>
+<a href="#Version">Version</a></li><li>
+<a href="#Related_Functions">Related Functions</a></li></ol></li></ol></div><p class="line874"> <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span></p><p class="line867">
+</p><h2 id="Syntax">Syntax</h2>
+<span class="anchor" id="line-15"></span><p class="line867"><span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span></p><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+function isnumbered(obj) {
+  return obj.childNodes.length && obj.firstChild.childNodes.length && obj.firstChild.firstChild.className == 'LineNumber';
+}
+function nformat(num,chrs,add) {
+  var nlen = Math.max(0,chrs-(''+num).length), res = '';
+  while (nlen>0) { res += ' '; nlen-- }
+  return res+num+add;
+}
+function addnumber(did, nstart, nstep) {
+  var c = document.getElementById(did), l = c.firstChild, n = 1;
+  if (!isnumbered(c)) {
+    if (typeof nstart == 'undefined') nstart = 1;
+    if (typeof nstep  == 'undefined') nstep = 1;
+    var n = nstart;
+    while (l != null) {
+      if (l.tagName == 'SPAN') {
+        var s = document.createElement('SPAN');
+        var a = document.createElement('A');
+        s.className = 'LineNumber';
+        a.appendChild(document.createTextNode(nformat(n,4,'')));
+        a.href = '#' + did + '_' + n;
+        s.appendChild(a);
+        s.appendChild(document.createTextNode(' '));
+        n += nstep;
+        if (l.childNodes.length) {
+          l.insertBefore(s, l.firstChild);
+        }
+        else {
+          l.appendChild(s);
+        }
+      }
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function remnumber(did) {
+  var c = document.getElementById(did), l = c.firstChild;
+  if (isnumbered(c)) {
+    while (l != null) {
+      if (l.tagName == 'SPAN' && l.firstChild.className == 'LineNumber') l.removeChild(l.firstChild);
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function togglenumber(did, nstart, nstep) {
+  var c = document.getElementById(did);
+  if (isnumbered(c)) {
+    remnumber(did);
+  } else {
+    addnumber(did,nstart,nstep);
+  }
+  return false;
+}
+</script>
+
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-pygments_780\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-pygments_780" lang="en"><span class="line"><span class="n">SDL_AssertionHandler</span> <span class="n">SDL_GetDefaultAssertionHandler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></pre></div><span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line867">
+</p><h2 id="Return_Value">Return Value</h2>
+<span class="anchor" id="line-21"></span><p class="line862">Returns the default SDL_<a class="nonexistent" href="/AssertionHandler">AssertionHandler</a> that is called when an assert triggers. <span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span></p><p class="line867">
+</p><h2 id="Code_Examples">Code Examples</h2>
+<span class="anchor" id="line-25"></span><p class="line867"><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span></p><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-pygments_781\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-pygments_781" lang="en"><span class="line"><span class="n">You</span> <span class="n">can</span> <span class="n">add</span> <span class="n">your</span> <span class="n">code</span> <span class="n">example</span> <span class="n">here</span>
+</span></pre></div><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><p class="line867"><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span></p><p class="line867">
+</p><h2 id="Remarks">Remarks</h2>
+<span class="anchor" id="line-33"></span><p class="line862">This returns the function pointer that is called by default when an assertion is triggered. This is an internal function provided by SDL, that is used for assertions when <a href="../Function/SDL_SetAssertionHandler.html#">SDL_SetAssertionHandler</a>() hasn&#39;t been used to provide a different function. <span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span></p><p class="line867">
+</p><h2 id="Version">Version</h2>
+<span class="anchor" id="line-36"></span><p class="line874">This function is available since SDL 2.0.2. <span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span></p><p class="line867">
+</p><h2 id="Related_Functions">Related Functions</h2>
+<span class="anchor" id="line-39"></span><ul><li style="list-style-type:none"><p class="line891"><a href="../Function/SDL_GetAssertionHandler.html#">SDL_GetAssertionHandler</a> <span class="anchor" id="line-40"></span></p></li></ul><p class="line867"><span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span></p><p class="line867"></p></div><p id="pageinfo" class="info" lang="en" dir="ltr">None: SDL_GetDefaultAssertionHandler  (last edited 2014-02-25 21:47:30 by <span title="PhilippWiesemann @ p57B8E580.dip0.t-ipconnect.de[87.184.229.128]"><a class="nonexistent" href="/PhilippWiesemann" title="PhilippWiesemann @ p57B8E580.dip0.t-ipconnect.de[87.184.229.128]">PhilippWiesemann</a></span>)</p>
+
+<div id="pagebottom"></div>
+
+		</body></html>

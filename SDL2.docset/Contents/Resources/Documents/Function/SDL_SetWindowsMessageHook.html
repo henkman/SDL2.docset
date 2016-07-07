@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><title>SDL_SetWindowsMessageHook</title></head>
+		<body>
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><div><table style="width: &amp;quot;100%&amp;quot"><tbody><tr>  <td style="&amp;quot; color: #FF0000; &amp;quot; ; text-align: center"><p class="line862"> DRAFT</p></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line867"><span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span></p><p class="line867">
+</p><h1 id="SDL_SetWindowsMessageHook-1">SDL_SetWindowsMessageHook</h1>
+<span class="anchor" id="line-9"></span><p class="line862">Use this function to set a function that is called for every windows message, before TranslateMessage(). <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span></p><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li>
+<a href="#SDL_SetWindowsMessageHook-1">SDL_SetWindowsMessageHook</a><ol><li>
+<a href="#Syntax">Syntax</a></li><li>
+<a href="#Function_Parameters">Function Parameters</a></li><li>
+<a href="#Code_Examples">Code Examples</a></li><li>
+<a href="#Remarks">Remarks</a></li><li>
+<a href="#Version">Version</a></li></ol></li></ol></div><p class="line874"> <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span></p><p class="line867">
+</p><h2 id="Syntax">Syntax</h2>
+<span class="anchor" id="line-16"></span><p class="line867"><span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span></p><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+function isnumbered(obj) {
+  return obj.childNodes.length && obj.firstChild.childNodes.length && obj.firstChild.firstChild.className == 'LineNumber';
+}
+function nformat(num,chrs,add) {
+  var nlen = Math.max(0,chrs-(''+num).length), res = '';
+  while (nlen>0) { res += ' '; nlen-- }
+  return res+num+add;
+}
+function addnumber(did, nstart, nstep) {
+  var c = document.getElementById(did), l = c.firstChild, n = 1;
+  if (!isnumbered(c)) {
+    if (typeof nstart == 'undefined') nstart = 1;
+    if (typeof nstep  == 'undefined') nstep = 1;
+    var n = nstart;
+    while (l != null) {
+      if (l.tagName == 'SPAN') {
+        var s = document.createElement('SPAN');
+        var a = document.createElement('A');
+        s.className = 'LineNumber';
+        a.appendChild(document.createTextNode(nformat(n,4,'')));
+        a.href = '#' + did + '_' + n;
+        s.appendChild(a);
+        s.appendChild(document.createTextNode(' '));
+        n += nstep;
+        if (l.childNodes.length) {
+          l.insertBefore(s, l.firstChild);
+        }
+        else {
+          l.appendChild(s);
+        }
+      }
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function remnumber(did) {
+  var c = document.getElementById(did), l = c.firstChild;
+  if (isnumbered(c)) {
+    while (l != null) {
+      if (l.tagName == 'SPAN' && l.firstChild.className == 'LineNumber') l.removeChild(l.firstChild);
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function togglenumber(did, nstart, nstep) {
+  var c = document.getElementById(did);
+  if (isnumbered(c)) {
+    remnumber(did);
+  } else {
+    addnumber(did,nstart,nstep);
+  }
+  return false;
+}
+</script>
+
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-pygments_1394\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-pygments_1394" lang="en"><span class="line"><span class="kt">void</span> <span class="n">SDL_SetWindowsMessageHook</span><span class="p">(</span><span class="n">SDL_WindowsMessageHook</span> <span class="n">callback</span><span class="p">,</span>
+</span><span class="line">                               <span class="kt">void</span><span class="o">*</span>                  <span class="n">userdata</span><span class="p">)</span>
+</span></pre></div><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><p class="line867">
+</p><h2 id="Function_Parameters">Function Parameters</h2>
+<span class="anchor" id="line-23"></span><div><table><tbody><tr>  <td><p class="line891"><strong>callback</strong></p></td>
+  <td><p class="line862">the function to call for every message; see <a href="../Function/SDL_SetWindowsMessageHook.html#Remarks">Remarks</a> for details</p></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-24"></span><p class="line891"><strong>userdata</strong></p></td>
+  <td><p class="line862">a pointer that is passed to <strong>callback</strong></p></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span><p class="line867">
+</p><h2 id="Code_Examples">Code Examples</h2>
+<span class="anchor" id="line-28"></span><p class="line867"><span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span></p><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-pygments_1395\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-pygments_1395" lang="en"><span class="line"><span class="n">You</span> <span class="n">can</span> <span class="n">add</span> <span class="n">your</span> <span class="n">code</span> <span class="n">example</span> <span class="n">here</span>
+</span></pre></div><span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span><p class="line867"><span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span></p><p class="line867">
+</p><h2 id="Remarks">Remarks</h2>
+<span class="anchor" id="line-36"></span><p class="line874">This function is available on Microsoft Windows. <span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span></p><p class="line862">The function prototype for <strong>callback</strong> is: <span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span></p><p class="line867"><span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span></p><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+document.write('<a href="#" onclick="return togglenumber(\'CA-pygments_1396\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-pygments_1396" lang="en"><span class="line"><span class="kt">void</span> <span class="n">SDL_WindowsMessageHook</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span>        <span class="n">userdata</span><span class="p">,</span>
+</span><span class="line">                            <span class="kt">void</span><span class="o">*</span>        <span class="n">hWnd</span><span class="p">,</span>
+</span><span class="line">                            <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">message</span><span class="p">,</span>
+</span><span class="line">                            <span class="n">Uint64</span>       <span class="n">wParam</span><span class="p">,</span>
+</span><span class="line">                            <span class="n">Sint64</span>       <span class="n">lParam</span><span class="p">)</span>
+</span></pre></div><span class="anchor" id="line-47"></span><ul><li style="list-style-type:none">where its parameter is: <span class="anchor" id="line-48"></span></li></ul><ul><li style="list-style-type:none"><div><table><tbody><tr>  <td><p class="line891"><tt class="backtick">userdata</tt> </p></td>
+  <td><p class="line862">what was passed as <strong>userdata</strong> to <a href="../Function/SDL_SetWindowsMessageHook.html#">SDL_SetWindowsMessageHook</a>() </p></td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span></li></ul><p class="line867">
+</p><h2 id="Version">Version</h2>
+<span class="anchor" id="line-52"></span><p class="line874">This function is available since SDL 2.0.4. <span class="anchor" id="line-53"></span><span class="anchor" id="line-54"></span></p><p class="line867"></p></div><p id="pageinfo" class="info" lang="en" dir="ltr">None: SDL_SetWindowsMessageHook  (last edited 2015-05-17 21:25:05 by <span title="PhilippWiesemann @ p57B8E7D6.dip0.t-ipconnect.de[87.184.231.214]"><a class="nonexistent" href="/PhilippWiesemann" title="PhilippWiesemann @ p57B8E7D6.dip0.t-ipconnect.de[87.184.231.214]">PhilippWiesemann</a></span>)</p>
+
+<div id="pagebottom"></div>
+
+		</body></html>
